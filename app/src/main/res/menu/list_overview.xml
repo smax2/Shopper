@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ListOverview">
+
+    <item android:id="@+id/action_addList"
+        android:title="@string/action_addList"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_new"/>
+
+    <item android:id="@+id/action_sync"
+        android:title="@string/action_synchronize"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_refresh"/>
+
+</menu>

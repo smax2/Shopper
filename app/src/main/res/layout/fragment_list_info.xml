@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.maxedapps.com.maxedapps.fragments.ListInfoFragment">
+
+    <TextView
+        android:id="@+id/txtListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="@string/input_text_listname"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/inputListName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtListName"
+        android:hint="@string/input_hint_listname"
+        android:textSize="20sp"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="30"/>
+
+    <TextView
+        android:id="@+id/txtListPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputListName"
+        android:layout_marginTop="20dp"
+        android:text="@string/input_text_listpassword"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/inputListPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtListPassword"
+        android:hint="@string/input_hint_listpassword"
+        android:textSize="20sp"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="8"/>
+
+    <TextView
+        android:id="@+id/txtNamePWConventions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputListPassword"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="@string/txt_input_conventions1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNamePWConventions"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_cancel"
+            android:text="@string/btn_cancel" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_continue"
+            android:text="@string/btn_continue" />
+        </LinearLayout>
+
+</RelativeLayout>

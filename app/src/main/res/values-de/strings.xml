@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SharedShopping</string>
+    <string name="action_settings">Optionen</string>
+    <string name="action_addList">Neue Liste</string>
+    <string name="action_joinList">Liste beitreten</string>
+    <string name="action_unjoinList">Liste verlassen</string>
+    <string name="action_synchronize">Synchronisieren</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="action_view">Anzeigen</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_share">Listen-ID teilen</string>
+    <string name="dialog_deleteItem">Eintrag löschen?</string>
+    <string name="dialog_deleteList">Liste löschen?</string>
+    <string name="dialog_choose_sync">Welche Synchronisierung soll erfolgen?</string>
+    <string name="dialog_choose_add">Bitte wählen</string>
+    <string name="dialog_join_list">Listendaten eingeben</string>
+    <string name="dialog_yes">Ja</string>
+    <string name="dialog_no">Nein</string>
+    <string name="title_activity_edit_list_1">Liste bearbeiten</string>
+    <string name="title_activity_edit_list_2">Liste erstellen</string>
+    <string name="input_text_listname">Name der Liste:</string>
+    <string name="input_text_listpassword">Passwort:</string>
+    <string name="input_hint_listname">Name</string>
+    <string name="input_hint_listpassword">Passwort</string>
+    <string name="input_hint_listid">Id der Liste</string>
+    <string name="btn_cancel">Abbrechen</string>
+    <string name="btn_continue">Weiter</string>
+    <string name="error_no_internet">Keine Internetverbindung!</string>
+    <string name="error_no_data_received">Es konnten keine Daten abgerufen werden!</string>
+    <string name="notification_start_update">Synchronisation wird gestartet!</string>
+    <string name="notification_successfull_update">Erfolgreich aktualisiert!</string>
+
+    <string name="warning_name_and_password">Bitte geben Sie einen gültigen Namen und ein gültiges Passwort ein!</string>
+    <string name="warning_item_name">Bitte geben Sie einen gültigen Namen ein!</string>
+    <string name="warning_sync_necessary">Bitte versuche es gleich nochmal, es ist eine einmalige Synchronisation notwendig.</string>
+    <string name="txt_input_conventions1">Der Name kann maximal 30 Zeichen lang sein, das Passwort muss mindestens 7 und höchstens 8 Zeichen lang sein.</string>
+    <string name="txt_list_users_annotation">Benutzer</string>
+
+    <string name="share_list_information_info">Du kannst folgender Liste beitreten</string>
+    <string name="share_list_information_id">\nListen-Id: </string>
+    <string name="share_list_information_password">\nPasswort: </string>
+    <string name="share_list_information_get_app">\nHol dir dazu SharedShopping im PlayStore!</string>
+
+    <array name="dialog_sync_choices">
+        <item name="dialog_sync_choice_overwrite_local">Listen runterladen</item>
+        <item name="dialog_sync_choice_overwrite_external">Listen hochladen</item>
+    </array>
+
+    <array name="dialog_add_choices">
+        <item name="dialog_add_choice_add_local">Eine neue Liste erstellen</item>
+        <item name="dialog_add_choice_join_list">Einer Liste beitreten</item>
+    </array>
+
+    <plurals name="txt_list_items_annotation">
+        <item quantity="one">Element</item>
+        <item quantity="other">Elemente</item>
+    </plurals>
+
+</resources>

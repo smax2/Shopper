@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/list_row">
+
+    <RelativeLayout
+        android:id="@+id/layoutContainer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:text="TEST_TITLE" />
+
+        <View
+            android:id="@+id/horizontalLine1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textTitle"
+            android:background="#000000"/>
+
+        <TextView
+            android:id="@+id/textUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTitle"
+            android:layout_marginTop="5dp"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:text="TEXT_USERS" />
+
+        <TextView
+            android:id="@+id/textNumberOfItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/textUsers"
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:text="TEXT_NUMBERITEMS" />
+    </RelativeLayout>
+
+</RelativeLayout>

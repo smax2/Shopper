@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.maxedapps.com.maxedapps.fragments.ListEditFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputItemName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:lines="1"
+            android:maxLines="1"
+            android:maxLength="30"/>
+
+        <ImageButton
+            android:id="@+id/btnAddItem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_new"
+            android:layout_weight="0.2"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/btn_continue"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/layoutEntry"
+        android:layout_marginTop="5dp"
+        android:background="#000000"/>
+
+    <ListView
+        android:id="@+id/listItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+    </ListView>
+
+</RelativeLayout>
