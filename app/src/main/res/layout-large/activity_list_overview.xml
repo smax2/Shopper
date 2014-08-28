@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:gravity="bottom"
-            ads:adSize="BANNER"
+            ads:adSize="FULL_BANNER"
             ads:adUnitId="ca-app-pub-2071006942209821/8588885797" />
     </RelativeLayout>
 </LinearLayout>

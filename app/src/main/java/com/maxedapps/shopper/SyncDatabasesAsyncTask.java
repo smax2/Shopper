@@ -98,6 +98,11 @@ public class SyncDatabasesAsyncTask extends AsyncTask<String, Void, Boolean> {
         }
         long userId = checkOrCreateUser(url[0]);
 
+        if (userId == 0) {
+            mErrorMessage = mContext.getString(R.string.error_no_user_created);
+            mTaskAccomplished = false;
+            return null;
+        }
         switch (mSyncMode) {
             case (SYNC_EXTERNAL):
                 mTaskAccomplished = syncExternalDB(userId, url[1]);
@@ -150,6 +155,7 @@ public class SyncDatabasesAsyncTask extends AsyncTask<String, Void, Boolean> {
         } else {
             return false;
         }
+        long[] exceptionIds;
         if (responseCode == 200) {
             InputStream is = null;
             try {
@@ -178,7 +184,7 @@ public class SyncDatabasesAsyncTask extends AsyncTask<String, Void, Boolean> {
 
                 //DBHelper.getInstance(mContext).deleteAllLists();
                 mShoppingLists.clear();
-                long[] exceptionIds = new long[lists.length()];
+                exceptionIds = new long[lists.length()];
                 for (int i = 0; i < lists.length(); i++) {
                     List<ListItem> listItems = new ArrayList<ListItem>();
                     JSONObject list = lists.getJSONObject(i);
@@ -212,13 +218,17 @@ public class SyncDatabasesAsyncTask extends AsyncTask<String, Void, Boolean> {
             } catch (JSONException e) {
                 mErrorMessage = mContext.getString(R.string.error_no_data_received);
                 e.printStackTrace();
+                return false;
             }
-            return true;
         } else {
             // Keine Daten vorhanden
+            exceptionIds = null;
+            DBHelper.getInstance(mContext).deleteAllLists(exceptionIds);
             mErrorMessage = mContext.getString(R.string.error_no_data_received);
-            return true;
+            return false;
         }
+
+        return true;
     }
 
     private boolean syncExternalDB(long user_id, String uri) {

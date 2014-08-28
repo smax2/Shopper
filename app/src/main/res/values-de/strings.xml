@@ -30,7 +30,8 @@
     <string name="btn_cancel">Abbrechen</string>
     <string name="btn_continue">Weiter</string>
     <string name="error_no_internet">Keine Internetverbindung!</string>
-    <string name="error_no_data_received">Es konnten keine Daten abgerufen werden!</string>
+    <string name="error_no_data_received">Synchronisierung fehlgeschlagen! Es konnten keine Daten abgerufen werden!</string>
+    <string name="error_no_user_created">Es konnte kein Benutzerkonto auf dem Gerät gefunden werden. Bitte erstellen Sie eines um die Onlinefunktionen nutzen zu können.</string>
     <string name="notification_start_update">Synchronisation wird gestartet!</string>
     <string name="notification_successfull_update">Erfolgreich aktualisiert!</string>
 

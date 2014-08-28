@@ -30,7 +30,8 @@
     <string name="btn_cancel">Cancel</string>
     <string name="btn_continue">Continue</string>
     <string name="error_no_internet">No internet connection found!</string>
-    <string name="error_no_data_received">No data could be retrieved!</string>
+    <string name="error_no_data_received">Synchronization failed! No data could be retrieved!</string>
+    <string name="error_no_user_created">No user account was found on this device. Please create one to be able to use the online functionality of this app.</string>
     <string name="notification_start_update">Starting synchronization!</string>
     <string name="notification_successfull_update">Data successfully updated!</string>
 

@@ -145,10 +145,12 @@ public class DBHelper extends SQLiteOpenHelper {
     public void deleteAllLists(long[] exceptionIds) {
         SQLiteDatabase db = this.getWritableDatabase();
         StringBuilder sb = new StringBuilder();
-        for (long exceptionId : exceptionIds) {
-            sb.append("'" + exceptionId + "', ");
+        if (exceptionIds != null) {
+            for (long exceptionId : exceptionIds) {
+                sb.append("'" + exceptionId + "', ");
+            }
+            sb.delete(sb.length()-2, sb.length());
         }
-        sb.delete(sb.length()-2, sb.length());
         db.delete(TABLE_LISTS, KEY_WEB_ID + " NOT IN (" + sb + ")", null);
     }
 
